@@ -1,0 +1,145 @@
+
+button {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 6;
+    border-radius: 50%;
+    border: none;
+    transform: rotate(180deg);
+}
+
+nav {
+    width: 100%;
+    z-index: 4;
+}
+
+.containerNav {
+    
+    display: flex;
+    z-index: 4;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+    background-color: var(--tertiary-color-sh);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 6rem;
+    
+}
+
+a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+  color: var(--primary-text);
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    
+}
+
+.textActive {
+    border-bottom: 3px solid var(--secondary-color);   
+}
+
+.iconButton {
+    font-size: 1.5rem;
+}
+
+
+/* Breakpoints */
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+    button {
+        display: block;
+        position: absolute;
+        right: 1.2rem;
+        top: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerNav {
+        background-color:rgba(0, 0, 0, 0);
+    }
+
+    ul {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--tertiary-color-sh);
+        padding: 4.5rem 0.5em 1rem 0.5rem ;
+        border-radius: 0 0 15px 15px;
+        right: 0.5rem ;
+    }
+
+    a {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 0.5rem;       
+    }
+
+    .iconNavbar {
+        font-size: 1.4rem;
+        color: var(--primary-text);
+    }
+
+    .iconButton {
+        font-size: 2rem;
+    }
+
+    .textNavbar {
+        font-size: 0.7rem;
+    }
+
+    .textActive {
+        border-bottom: none;   
+    }
+
+    .textActive > .iconNavbar  {
+        color: var(--secondary-color);
+    }
+
+    .textActive > .textNavbar {
+        color: var(--secondary-color);
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+}
